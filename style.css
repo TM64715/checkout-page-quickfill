@@ -1,92 +1,191 @@
-body {
+@media only screen and (max-device-width: 600px) {
+	body {
 
-	background-color: white;
-	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("background.png");
+		background-color: white;
+		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("background.png");
+	}
+
+	.logo {
+
+		max-width: 100%;
+		text-align: center;
+		color: #4CFF9C;
+		font-family: avenir;
+	}
+
+	.form-background {
+		max-height: 100%;
+		max-width: 70%;
+		margin: auto;
+		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("formbackground.png");
+		border-radius: 50px;
+	}
+
+	ul {
+
+		list-style: none;
+		border: none;
+	}
+
+	.form-element {
+		border:none;
+		margin-top: 30px;
+		width: 90%;
+		height: 20px;
+		background-color: rgba(253, 253, 253, 0.8);
+		font-family: avenir;
+		border-radius: 20px;
+		height: 40px;
+		color: #58bda1;
+		outline: none;
+		box-sizing: border-box;
+		padding-left: 15px;
+
+	}
+	.form-element::selector {
+		border: none;
+		outline: none;
+	}
+
+	::placeholder {
+
+		color: #219F71;
+		font-weight: 110%;
+	}
+
+	.email {
+		margin-top: 10px;
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+
+	.phone {
+		display: inline-block;
+		width: 40%;
+		float: left;
+		margin-top: 10px;
+		margin-left: 9.8%;
+	}
+
+	.thirds {
+
+		width: 25%;
+		float: left;
+		margin-top: 10px;
+	}
+
+	.CVC {
+
+		margin-left: calc(25%/3);
+	}
+
+
+	.zip-code {
+		margin-left: 5%;
+	}
+
+	.submit {
+		background-color: #feed6e;
+		margin-bottom: 10px;
+	}
 }
 
-.logo {
+@media only screen and (min-device-width: 600px) {
+	body {
 
-	max-width: 100%;
-	text-align: center;
-	color: #4CFF9C;
-	font-family: avenir;
+		background-color: white;
+		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("background.png");
+	}
+
+	.logo {
+
+		max-width: 100%;
+		text-align: center;
+		color: #4CFF9C;
+		font-family: avenir;
+	}
+
+	.form-background {
+		height: 400px;
+		width: 600px;
+		margin: auto;
+		background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("formbackground.png");
+		border-radius: 50px;
+	}
+
+	ul {
+
+		list-style: none;
+		border: none;
+	}
+
+	.form-element {
+		border:none;
+		margin-top: 30px;
+		width: 90%;
+		height: 20px;
+		background-color: rgba(253, 253, 253, 0.8);
+		font-family: avenir;
+		border-radius: 20px;
+		height: 40px;
+		color: #58bda1;
+		outline: none;
+		box-sizing: border-box;
+		padding-left: 15px;
+
+	}
+	.form-element::selector {
+		border: none;
+		outline: none;
+	}
+
+	::placeholder {
+
+		color: #219F71;
+		font-weight: 110%;
+	}
+
+	.name {
+
+		margin-top: 50px;
+	}
+
+	.email {
+		margin-top: 10px;
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+
+	.phone {
+		display: inline-block;
+		width: 40%;
+		float: left;
+		margin-top: 10px;
+		margin-left: 9.8%;
+	}
+
+	.thirds {
+
+		width: 25%;
+		float: left;
+		margin-top: 10px;
+	}
+
+	.CVC {
+
+		margin-left: calc(25%/3);
+	}
+
+	.CVC::placeholder {
+	}
+
+	.zip-code {
+		margin-left: 5%;
+	}
+
+	.submit {
+		background-color: #feed6e;
+	}
 }
-
-.form-background {
-	height: 400px;
-	width: 600px;
-	margin: auto;
-	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("formbackground.png");
-	border-radius: 50px;
-}
-
-ul {
-
-	list-style: none;
-	border: none;
-}
-
-.form-element {
-	border:none;
-	margin-top: 30px;
-	width: 90%;
-	height: 20px;
-	background-color: rgba(253, 253, 253, 0.8);
-	font-family: avenir;
-	border-radius: 20px;
-	height: 40px;
-	color: #58bda1;
-	outline: none;
-	box-sizing: border-box;
-	padding-left: 15px;
-
-}
-.form-element::selector {
-	border: none;
-	outline: none;
-}
-
-::placeholder {
-
-	color: #219F71;
-	font-weight: 110%;
-}
-
-.email {
-	margin-top: 10px;
-	width: 40%;
-	display: inline-block;
-	float: left;
-}
-
-.phone {
-	display: inline-block;
-	width: 40%;
-	float: left;
-	margin-top: 10px;
-	margin-left: 9.8%;
-}
-
-.thirds {
-
-	width: 25%;
-	float: left;
-	margin-top: 10px;
-}
-
-.CVC {
-
-	margin-left: calc(25%/3);
-}
-
-.CVC::placeholder {
-}
-
-.zip-code {
-	margin-left: 5%;
-}
-
-.submit {
-	background-color: #feed6e;
-}
-
