@@ -16,19 +16,19 @@
 					<input type="email" id = "email" name = "user_email" placeholder="Email" class="form-element email">
 				</li>
 				<li>
-					<input type="tel" id = "phone" name = "user_phone" placeholder="Phone Number" class="form-element phone">
+					<input type="tel" id = "phone" name = "user_phone" placeholder="Phone Number" class="form-element phone" maxlength="10">
 				</li>
 				<li>
-					<input type="text" id = "creditcard" name = "user_cc" placeholder="Credit Card Number" class="form-element creditcard">
+					<input type="text" id = "creditcard" name = "user_cc" placeholder="Credit Card Number" class="form-element creditcard" maxlength="16">
 				</li>
 				<li>
-					<input type="text" id = "expiration" name = "user_expiration" placeholder="Expiration (01/20)" class="form-element expiration thirds">
+					<input type="tel" id = "expiration" name = "user_expiration" placeholder="Expiration (01/20)" class="form-element expiration thirds" maxlength="7" minlength="5">
 				</li>
 				<li>
-					<input type="text" id = "CVC" name = "user_cvc" placeholder="CVC" class="form-element CVC thirds">
+					<input type="text" id = "CVC" name = "user_cvc" placeholder="CVC" class="form-element CVC thirds" maxlength="4" minlength="3" pattern="\d\d\d+">
 				</li>
 				<li>
-					<input type="text" id = "zipcoode" name = "user_zip" placeholder="Zip Code" class="form-element zip-code thirds">
+					<input type="tel" id = "zipcode" name = "user_zip" placeholder="Zip Code" class="form-element zip-code thirds" pattern="\d{4}" maxlength="10">
 				</li>
 				<li>
 					<input type="submit" value = "PAY" class="form-element submit">
@@ -37,5 +37,6 @@
 			</ul>
 		</form>
 	</div>
+	
 </body>
 </html>
